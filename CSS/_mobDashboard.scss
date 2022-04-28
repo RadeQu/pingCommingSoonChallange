@@ -1,0 +1,53 @@
+@include mobile {
+    body{
+
+        .wrapper{
+                @include flex(center, center, column);
+                .title{
+                    img{
+                        position: absolute;
+                        top: 2%;
+                    }
+                    .textOne{
+                        font-size: 2rem;
+                        margin-bottom: 2%;
+                        span{
+                            font-size: 2rem;
+                        }
+                    }
+                    .inputSection{
+                        @include flex(center, center, column);
+                        
+                        input{
+                            width: 50%;
+                        }
+                        button{
+                            margin-top: 1%;
+                            width: 50%;
+                            margin-bottom: 4%;
+                        }
+                        .errMess{
+                            display: flex;
+                            position: static;
+                            margin-bottom: 2%;
+                            transform: translate(0%, 30%);
+                        }
+                    }
+                }
+                .content{
+                    width: 135%;
+                }
+                .foot{
+                    position: absolute;
+                    bottom: 5%;
+                    .socialIcons{
+                        ion-icon{
+                            margin:0 2% 5%;
+                        }
+                    }
+                }
+            }
+    
+    }
+    
+}
